@@ -28,3 +28,11 @@ artists -> Song artists
 
 time -> Songplay timestamps 
 
+#### Code Organization 
+The Project includes the relavant files as below.
+create_tables.py - Executes the sql_queries module to drop and create fact and dimension tables as well Sparkify Database. 
+etl.ipynb - Used for exploratory analysis for the ETL workflow, it reads the single record from song an log data.
+test.ipynb - The queries to verify the data loaded in the database.
+sql_queries.py - Contains the SQL statements to insert / select / drop and create tables.
+etl.py - The python script that crawls through json files, parses the data and insert into postgres with appropiate data types.
+README.md - Project description 
