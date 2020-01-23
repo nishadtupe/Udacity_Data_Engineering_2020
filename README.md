@@ -8,6 +8,6 @@ Developed a relational database using PostgreSQL and ETL Pipeline to model user 
 ##### Highlights:
 
 Design creating star schema optimized for queries on song play analysis in relational database Postgres.
-Implement ETL work flow using python script that extract information from json logs and stores into Postgres.
+Implemented ETL pipeline using python script that extract information from json logs and stores into Postgres.
 
 ##### Skills: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
