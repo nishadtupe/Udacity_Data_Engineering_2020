@@ -7,10 +7,10 @@ from sql_queries import *
 
 def process_song_file(cur, filepath):
     
-    '''This function reads the songs metadata JSON files selects the subset of the data and loads the data in Songd and Artistd (dimensions) tables 
+    '''This function reads the songs metadata JSON files and loads the data in Songs and Artists tables 
     arguments :
-    1. cur -> database cursor and 
-    2. filepath -> physical location of the JSON files'''
+    1. cur - database cursor and 
+    2. filepath - physical location of the JSON files'''
     
     # open song file
     df = pd.read_json(filepath,lines=True)
@@ -26,7 +26,7 @@ def process_song_file(cur, filepath):
 
 def process_log_file(cur, filepath):
     
-    '''This function reads the App's user activity metadata from JSON files selects the subset and loads the data in the users,time (dimensions) and songplays(fact)  tables 
+    '''This function reads the App's user activity metadata from JSON files and loadsin the users,time and songplays tables 
     arguments :
     1. cur -> database cursor and 
     2. filepath -> physical location of the JSON files'''
@@ -74,7 +74,7 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
-    '''This functions calls the above two functions 
+    '''This functions calls the above two functions to parse the json logs
     arguments :
     1. cur -> database cursor and 
     2. conn -> connection to the sparkifydb
