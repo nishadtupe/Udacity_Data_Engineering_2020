@@ -16,7 +16,7 @@ Using the song and log datasets, build the ETL pipeline using Python that extrac
 
 ###### Fact Table
 
-songplays -> records in log data associated with song plays
+songplays -> Records in log data associated with song plays
 
 ###### Dimension Tables
 
@@ -42,3 +42,7 @@ sql_queries.py - Contains the SQL statements to insert / select / drop and creat
 etl.py - The python script that crawls through json files, parses the data and insert into postgres with appropiate data types.
 
 README.md - Project description 
+
+#### References - Udacity Introduction for the project.
+
+https://classroom.udacity.com/nanodegrees/nd027/parts/f7dbb125-87a2-4369-bb64-dc5c21bb668a/modules/c0e48224-f2d0-4bf5-ac02-3e1493e530fc/lessons/01995bb4-db30-4e01-bf38-ff11b631be0f/concepts/7a6e1e47-cb4f-4e98-be3f-02d71fbd82f6
